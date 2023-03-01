@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToursnTravels</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="whatsapp_float">
+        <a href="https://wa.me/1XXXXXXXXXX" target=""><img src="/images/WhatsApp.svg.webp" width="50px"
+                class="whatsapp_float_btn"></a>
+    </div>
+    <!------------------Navigation----------->
+    <nav class="navbar navbar-inverse navbar-fixed-top backgraound">
+        <div class="container">
+            <div class="navbar-header">
+                <!-------Responsive Button---->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navid">
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#home" class="navbar-brand"><img class="brand-logo" src="/images/favicons.png"></a>
+            </div>
+            <!-------Nav Menu----->
+            <div class="collapse navbar-collapse" id="navid">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</li></a>
+                    <li><a href="#places">Destination</li></a>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pacakages <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Domestic</a></li>
+                            <li><a href="#">International</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section2">Reviews</li></a>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- A button to open the popup form -->
+                    <button class="open-button" onclick="openForm()">Get in Touch</button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="/" class="form-container">
+                            <h2>We will call you soon!</h2>
+
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter Name" name="name" required>
+
+                            <label for="num"><b>Number</b></label>
+                            <input type="text" placeholder="Enter Phone Number" name="Number" placeholder="123-45-678"
+                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------Nav Ends--------->
+
+    <!--------------Slider--------->
+    <section class="slider text-center" id="slider">
+        <div class="slider-overlay">
+            <div class="slider-content">
+                <div class="text">
+                    <h1 class="center-large" id="demo">Make us your travel partner</h1>
+                </div>
+                <button class="center-button"><a href=""></a>Explore Our Gallery</button>
+            </div>
+        </div>
+    </section>
+    <!--------------Slider Ends--------->
+    <!--------------Section1--------->
+    <section class="section-1 box" id="places">
+        <div class="container-fluid text-center">
+            <div class="text">
+                <h1 class="center-place" id="demo">Dream Destinations</h1>
+            </div>
+            <div class="grid">
+                <div class="grid-item">
+                    <div class="card">
+                        <img class="card-img" src="/images/img2.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="card-header">London</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime!
+                                Neque porro excepturi nam possimus.</p>
+                            <button class="card-btn">Visit right now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card">
+                        <img class="card-img" src="/images/img7.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="card-header">Venice</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime!
+                                Neque porro excepturi nam possimus.</p>
+                            <button class="card-btn">Visit right now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card">
+                        <img class="card-img" src="/images/img10.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="card-header">India</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime!
+                                Neque porro excepturi nam possimus.</p>
+                            <button class="card-btn">Visit right now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------Section1 Ends--------->
+
+    <!--------------Section2 starts--------->
+    <section class="section2 text-center" id="section2">
+        <div class="section2-overlay">
+            <div class="section2-main">
+                <div class="section2-container">
+                    <span class="num" data-val="457">000</span>
+                    <span class="text">Trips</span>
+                </div>
+                <div class="section2-container">
+                    <span class="num" data-val="829">000</span>
+                    <span class="text">Happy Travelers</span>
+                </div>
+                <div class="section2-container">
+                    <span class="num" data-val="160">000</span>
+                    <span class="text">Countries</span>
+                </div>
+                <div class="section2-container">
+                    <span class="num" data-val="539">000</span>
+                    <span class="text">Five Stars</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--------------Section2 Ends--------->
+
+
+    <div class="section-4 box" id=""></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="flex-container">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit, amet consectetLorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptas excepturi, hic magni delectus quos illour adiplo?</p>
+            </div>
+            <div class="flex-container">
+                <h3>Social Media</h3>
+                <div class="socialicons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-google"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
